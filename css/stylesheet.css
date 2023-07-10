@@ -12,3 +12,19 @@ ul give id menuList*/
 #menuList.menuShow{
     display: block;
 }
+
+.page{width:80vw;height:80vh;border:1px solid red}
+nav ul li{display:inline;}
+#page1{
+    font-size: 110%;
+}
+#page2{font-size: 190%}
+#page3{font-size: 250%}
+
+/*for responsive menu*/
+#hamIcon{display:none;}
+@media screen and (max-width:800px){
+nav ul li{display:block;} /*make a menu items vertical*/
+#hamIcon{display: block;} /* unhide menu icon */
+nav ul{display:none;} /*hide the menu item list*/
+}
