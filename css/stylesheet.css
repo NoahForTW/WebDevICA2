@@ -1,10 +1,20 @@
 * {
-    font-family: "Bundes Sans";
+    font-family: Bundes Sans;
 }
 
 @font-face {
-    font-family: "Bundes Sans";
+    font-family: Bundes Sans;
     src: url(../fonts/BundesSans-Regular.ttf)
+}
+
+h3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 170%;
+}
+
+p {
+    font-size: 140%;
 }
 
 /* Bug Fix for Ham Menu */
@@ -12,17 +22,24 @@
     display: block;
 }
 
-.page{width:80vw;height:80vh;}
-nav ul li{display:inline;}
-#page1{
+#menuList{
+    font-size: 115%;
 }
-#page2{}
-#page3{}
+
+.page{width:auto;height:auto;}
+nav ul li{display:inline;}
+#page1{background: grey;}
+#page2{background: grey;}
+#page3{background: grey;}
+#page4{background: grey;}
 
 /*for responsive menu*/
 #hamIcon{display:none;}
 @media screen and (max-width:800px){
 nav ul li{display:block;} /*make a menu items vertical*/
-#hamIcon{display: block;} /* unhide menu icon */
+#hamIcon{
+    display: block;
+    font-size: 115%;
+} /* unhide menu icon */
 nav ul{display:none;} /*hide the menu item list*/
 }
