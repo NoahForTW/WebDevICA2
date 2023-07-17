@@ -21,6 +21,10 @@
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
 }
 
 .header h1{
