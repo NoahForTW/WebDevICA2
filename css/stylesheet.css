@@ -1,10 +1,12 @@
 * {
-    font-family: Bundes Sans;
+    font-family: Trajan Pro;
+    padding: 0px;
+    margin: 0px;
 }
 
 @font-face {
-    font-family: Bundes Sans;
-    src: url(../fonts/BundesSans-Regular.ttf)
+    font-family: Trajan Pro;
+    src: url(../fonts/TranjanProRegular.ttf)
 }
 
 .clearfix::after {
@@ -13,14 +15,55 @@
     display: table;
   }
 
+.header{
+    background-color: #8B0000; /* Deep Red */
+    color: #FFFFFF; /* Text color for better contrast */
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.header h1{
+    padding-bottom: 5px;
+}
+
+.header button{
+    background-color: #8B0000; /* Deep Red */
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #FFFFFF; /* White text color for contrast */
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Box shadow properties */
+    transition: background-color 0.6s ease;
+}
+
+.header button:hover 
+{
+    background-color: #CD5C5C; /* Lighter shade of red on hover */
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Adjusted box shadow on hover */
+}
+
+.header img {
+    max-width: 52px;
+    height: auto;
+    margin-top: 20px;
+}
+
 h3{
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: center;
     font-size: 170%;
 }
 
 p {
-    font-size: 140%;
+    text-align: center;
+    font-size: 110%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* Bug Fix for Ham Menu */
@@ -30,28 +73,59 @@ p {
 
 #menuList{
     font-size: 115%;
+    padding-bottom: 3px;
 }
 
 .qrcode{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.qrcode img{
+    max-width: 160px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.sources{
+    background-color: #4F3629; /* Dark Brown */
+    color: #FFFFFF; /* Text color for better contrast */
 }
 
 .page{width:auto;height:auto;}
 nav ul li{display:inline;}
-#page1{background: rgb(237, 195, 116);}
-#page2{background: grey;}
-#page3{background: grey;}
-#page4{background: grey;}
+#page1
+{
+    background-color: #FDF5E6; /* Cream or Beige */;
+    color: #333333;
+}
+#page2
+{
+    background: #FDF5E6;
+    color: #333333;
+}
+#page3
+{
+    background: #FDF5E6;
+    color: #333333;
+}
+#page4
+{
+    background: #FDF5E6;
+    color: #333333;
+}
 
 /*for responsive menu*/
-#hamIcon{display:none;}
+#hamIcon{
+    display: none;
+}
+
 @media screen and (max-width:800px){
 nav ul li{display:block;} /*make a menu items vertical*/
 #hamIcon{
     display: block;
     font-size: 115%;
+    justify-content: center;
 } /* unhide menu icon */
 nav ul{display:none;} /*hide the menu item list*/
 }
