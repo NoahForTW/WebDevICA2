@@ -85,6 +85,10 @@ p {
     justify-content: center;
 }
 
+.qrcode h3 {
+    order: ;
+}
+
 .qrcode img{
     max-width: 160px;
     height: auto;
@@ -94,6 +98,17 @@ p {
 .sources{
     background-color: #4F3629; /* Dark Brown */
     color: #FFFFFF; /* Text color for better contrast */
+}
+
+.sources h3{
+    padding-bottom: 25px;
+}
+
+.sources a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    text-align: center;
 }
 
 .page{width:auto;height:auto;}
