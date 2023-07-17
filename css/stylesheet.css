@@ -7,6 +7,12 @@
     src: url(../fonts/BundesSans-Regular.ttf)
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 h3{
     padding-top: 5px;
     text-align: center;
@@ -24,6 +30,12 @@ p {
 
 #menuList{
     font-size: 115%;
+}
+
+.qrcode{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .page{width:auto;height:auto;}
