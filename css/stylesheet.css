@@ -16,6 +16,7 @@
   }
 
 .header{
+    display: grid;
     background-color: #8B0000; /* Deep Red */
     color: #FFFFFF; /* Text color for better contrast */
     font-size: 20px;
@@ -23,7 +24,6 @@
     padding-bottom: 10px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     position: relative;
-    z-index: inherit;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
 }
 
@@ -64,8 +64,8 @@ h3{
 p {
     text-align: center;
     font-size: 110%;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 130px;
+    padding-right: 130px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -83,10 +83,6 @@ p {
 .qrcode{
     display: flex;
     justify-content: center;
-}
-
-.qrcode h3 {
-    order: ;
 }
 
 .qrcode img{
@@ -109,6 +105,10 @@ p {
     color: white;
     font-size: small;
     text-align: center;
+}
+
+.pagecontainer{
+    
 }
 
 .page{width:auto;height:auto;}
@@ -139,12 +139,14 @@ nav ul li{display:inline;}
     display: none;
 }
 
-@media screen and (max-width:800px){
-nav ul li{display:block;} /*make a menu items vertical*/
-#hamIcon{
-    display: block;
-    font-size: 115%;
-    justify-content: center;
-} /* unhide menu icon */
-nav ul{display:none;} /*hide the menu item list*/
+@media screen and (max-width:800px)
+{
+    nav ul li{display:block;} /*make a menu items vertical*/
+    #hamIcon
+    {
+        display: block;
+        font-size: 115%;
+        justify-content: center;
+    } /* unhide menu icon */
+    nav ul{display:none;} /*hide the menu item list*/
 }
