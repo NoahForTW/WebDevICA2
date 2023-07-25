@@ -54,6 +54,39 @@
     margin-top: 20px;
 }
 
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+label span {
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    margin: 3px 0;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+/* Bug Fix for Ham Menu */
+#menuList.menuShow{
+    display: block;
+}
+
+#menuList{
+    font-size: 115%;
+    padding-bottom: 3px;
+}
+
 h3{
     padding-top: 15px;
     text-align: center;
@@ -69,19 +102,11 @@ p {
     padding-bottom: 15px;
 }
 
-/* Bug Fix for Ham Menu */
-#menuList.menuShow{
-    display: block;
-}
-
-#menuList{
-    font-size: 115%;
-    padding-bottom: 3px;
-}
-
 .qrcode{
     display: flex;
     justify-content: center;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .qrcode img{
@@ -106,10 +131,6 @@ p {
     text-align: center;
 }
 
-.pagecontainer{
-    
-}
-
 .page{width:auto;height:auto;}
 nav ul li{display:inline;}
 #page1
@@ -128,6 +149,18 @@ nav ul li{display:inline;}
     color: #333333;
 }
 #page4
+{
+    background: #FDF5E6;
+    color: #333333;
+}
+
+#page5
+{
+    background: #FDF5E6;
+    color: #333333;
+}
+
+#page6
 {
     background: #FDF5E6;
     color: #333333;
