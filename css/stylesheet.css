@@ -1,4 +1,5 @@
-* {
+/* Clear the formatting */
+* { 
     font-family: Trajan Pro;
     padding: 0px;
     margin: 0px;
@@ -18,11 +19,11 @@
 .header{
     background-color: #8B0000; /* Deep Red */
     color: #FFFFFF; /* Text color for better contrast */
+    display: grid;
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
 }
 
@@ -54,27 +55,14 @@
     margin-top: 20px;
 }
 
+body {
+    width: 100%;
+    height: 10em;
+    box-sizing: border-box;
+}
+
 nav {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-label span {
-    background: #fff;
-    border-radius: 10px;
-    height: 4px;
-    margin: 3px 0;
-    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
 }
 
 /* Bug Fix for Ham Menu */
@@ -96,8 +84,8 @@ h3{
 p {
     text-align: center;
     font-size: 110%;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 17%;
+    padding-right: 17%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -181,4 +169,34 @@ nav ul li{display:inline;}
         justify-content: center;
     } /* unhide menu icon */
     nav ul{display:none;} /*hide the menu item list*/
+
+    [type="checkbox"] { /* Hides the checkbox */
+        width: 0;
+        height: 0;
+    }
+
+    body h3 {
+        font-size: 15px;
+    }
+
+    body p {
+        font-size: 15px;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    label span {
+        background: #fff;
+        border-radius: 10px;
+        height: 4px;
+        margin: 3px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
 }
