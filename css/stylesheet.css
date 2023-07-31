@@ -61,10 +61,6 @@ body {
     box-sizing: border-box;
 }
 
-nav {
-   
-}
-
 /* Bug Fix for Ham Menu */
 #menuList.menuShow{
     display: block;
@@ -88,6 +84,13 @@ p {
     padding-right: 17%;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.About img {
+    max-width: 200px;
+    height: auto;
+    float: right;
+    margin: 0 0 10px 10px; /* Add some margin for spacing */
 }
 
 .qrcode{
@@ -176,15 +179,16 @@ nav ul li{display:inline;}
     }
 
     body h3 {
-        font-size: 15px;
+        font-size: auto;
     }
 
     body p {
-        font-size: 15px;
+        font-size: auto;
     }
 
     label {
         display: flex;
+        float: right;
         flex-direction: column;
         width: 30px;
         height: 30px;
@@ -199,4 +203,6 @@ nav ul li{display:inline;}
         margin: 3px 0;
         transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
+
+    
 }
