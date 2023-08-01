@@ -22,7 +22,7 @@ let onepage=document.querySelector("#page"+pgno);
 onepage.style.display="block";
 }
 
-show(1)
+show(2)
 
 /*Listen for clicks on the buttons, assign anonymous
 eventhandler functions to call show function*/

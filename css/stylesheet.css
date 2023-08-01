@@ -55,6 +55,12 @@
     margin-top: 20px;
 }
 
+nav ul{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
 body {
     width: 100%;
     height: 10em;
@@ -66,9 +72,15 @@ body {
     display: block;
 }
 
+
 #menuList{
     font-size: 115%;
     padding-bottom: 3px;
+    display: block;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 h3{
@@ -166,9 +178,19 @@ nav ul li{display:inline;}
     } /* unhide menu icon */
     nav ul{display:none;} /*hide the menu item list*/
 
-    [type="checkbox"] { /* Hides the checkbox */
-        width: 0;
-        height: 0;
+    #menuList {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menuList ul {
+        margin: 0 15px;
+    }
+
+    /* Show the menu list when checkbox is checked */
+    #hamIcon:checked + #menuList {
+        display: flex;
     }
 
     body h3 {
@@ -180,6 +202,12 @@ nav ul li{display:inline;}
         font-size: auto;
         padding: auto;
     }
+
+    #menuList ul {
+        margin: 0 15px;
+    }
+
+    /* Hamburger Icon Start*/
 
     label {
         display: flex;
@@ -198,6 +226,53 @@ nav ul li{display:inline;}
         margin: 3px 0;
         transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
+
+    span:nth-of-type(1)
+    {
+        width:50%;
+    }
+      
+    span:nth-of-type(2)
+    {
+        width:100%;
+    }
+      
+    span:nth-of-type(3)
+    {
+        width:75%;
+       
+    }
+
+    input[type="checkbox"]{
+        width: 0;
+        height: 0;
+    }
+
+    input[type="checkbox"]:checked ~ span:nth-of-type(1)
+    {
+        transform-origin:bottom;
+        transform:rotatez(45deg) translate(4.5px,0px)
+    }
+
+    input[type="checkbox"]:checked ~ span:nth-of-type(2)
+    {
+  
+        transform-origin:top;
+        transform:rotatez(-45deg)
+    }
+      
+      
+    input[type="checkbox"]:checked ~ span:nth-of-type(3)
+    {
+        
+        transform-origin:bottom;
+        width:63%;
+        transform: translate(10px,-8px) rotatez(45deg);
+      
+    }
+    
+
+    /* Hamburger Icon End*/
 
     .page1grid {
         display: grid;
