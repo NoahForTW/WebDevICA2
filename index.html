@@ -8,6 +8,7 @@
         <script src="./js/javascript.js" defer></script>
     </head>
     <body>
+        <!-- Header Section -->
         <div class="header">
             <header>
                 <div>
@@ -16,7 +17,7 @@
                 <h1>Romans</h1>
             </header>
             <nav>
-                <!--<button id="hamIcon">Menu</button>-->
+                <!-- Hamburger Menu -->
                 <label>
                     <input type="checkbox" id="hamIcon"/>
                     <span></span>
@@ -26,19 +27,22 @@
                 <ul id="menuList">
                     <button id="page1btn" >About</button>
                     <button id="page2btn">History</button>
-                    <button id="page3btn">Government</button>
-                    <button id="page4btn">Inventions</button>
-                    <button id="page5btn">Culture</button>
-                    <button id="page6btn">Quiz</button>
+                    <button id="page3btn">Inventions</button>
+                    <button id="page4btn">Culture</button>
+                    <button id="page5btn">Quiz</button>
                 </ul>
             </nav>
         </div>
+        <!-- Page Content -->
         <div class="pagecontainer">
+            <!-- Page 1 -->
             <div class="page" class="page1grid" id="page1">
                 <div class="div1">
+                    <!-- About the Romans -->
                     <h3>About the Romans 
                         <br>and Their History</h3>
                     <div>
+                        <!-- Content about the Romans -->
                         <p>
                             The Romans, an ancient civilisation from 753 BC, formed a powerful empire lasting centuries. Western Rome fell in 476 AD, and the eastern part in 1453 AD. 
                         <br><br>
@@ -82,28 +86,316 @@
                 </div>
                 <div class="sources">
                     <h3>Sources</h3>
-                    <a href="https://www.pngwing.com/en/free-png-vaiof" target="_blank" rel="noopener noreferrer"> Roman Symbol </a>
+                    <a href="https://en.wikipedia.org/wiki/Roman_Senate" target="_blank" rel="noopener noreferrer">Founding of Rome, The Government</a>
                 </div>
             </div>
-            <div class="page"id="page2">
-                <h3>Roman History</h3>
-                <p>Experience the captivating essence of ancient Roman culture, from the Roman Kingdom to the Roman Empire. Delve into a society renowned for its achievements in art, architecture, governance, and religion. Witness the development of Roman law, an enduring legal system that laid the foundation for modern legal principles. Explore magnificent architectural wonders like the Colosseum, Pantheon, and aqueducts, reflecting Roman engineering prowess. Immerse yourself in the arts through exquisite sculptures, mosaics, and frescoes, showcasing the Roman appreciation for beauty and storytelling. Discover the profound influence of Roman mythology and religious practices, where gods and goddesses were honored through elaborate rituals and temples. Marvel at the legacy of Roman festivals, gladiator contests, and chariot races that enthralled the citizens. Uncover the profound impact of Roman philosophy, literature, and mythology on Western thought. Step into the fascinating world of ancient Rome and immerse yourself in the cultural tapestry, where religion played a significant role in shaping this extraordinary civilization</p>
+            <!-- Page 2 -->
+            <div class="page" id="page2">
+                <div>
+                    <h3>Roman History</h3>
+                </div>
+                <div class="page2grid">
+                    <!-- Content for Roman History with images and text -->
+                    <div id="item-0" class="image-container">
+                        <img src="./images/foundingofrome.jpg" alt="Founding of Rome">
+                    </div>
+                    <div id="item-1">
+                        <h3>Founding of Rome (753 BC)</h3>
+                    </div>
+                    <div id="item-2">
+                        <p>
+                            Rome's origins are woven into captivating ancient mythology. Twin brothers, Romulus and Remus, were cast adrift and nurtured by a she-wolf. As they grew, they went on an expedition to found the location of the city.
+                            <br><br>
+                            Dispute arose when the two brother's couldn't decide on which location should they build the city on, the Palatine Hill or the Avantine Hill.
+                            <br><br>
+                            In order to reach a consensus, the two brothers seek divine guidance, they turned to augury – interpreting bird flight. Romulus saw eagles and chose the Palatine Hill to build the city. A clash with the brother's ended up killing Remus and Romulus as the city's ruler, named after him, Rome.
+                        </p>
+                    </div>
+                    <div id="item-3" class="image-container">
+                        <img src="./images/romankingdom.jpg" alt="Roman Kingdom">
+                    </div>
+                    <div id="item-4">
+                        <h3>The Roman Kingdon (753 BC - 509 BC)</h3>
+                    </div>
+                    <div id="item-5">
+                        <p>
+                            During this early epoch, Rome's governance was rooted in monarchy. A succession of kings, including Romulus and Numa Pompilius, ruled over the city. However, the final king, Tarquin the Proud, exhibited harsh rule that led to a seismic shift in Rome's political landscape.
+                            <br><br>
+                            This period saw the gradual emergence of the Roman identity. It was marked by both territorial expansion and the development of essential societal structures, including the Senate. The Senate, comprised primarily of patricians, played a pivotal role in advising the kings and later became a cornerstone of the Roman Republic.
+                            <br><br>
+                            The conflict of the orders, a struggle between the privileged patricians and the common plebeians, unfolded during this time, shaping the trajectory of Roman society. The establishment of basic institutions during the Roman Kingdom laid the foundation for the republic that followed. It was a time of nascent growth, as Rome transitioned from a monarchy to a new era characterized by shared governance and the burgeoning spirit of the republic.
+                        </p>
+                    </div>
+                    <div id="item-6">
+                        <div class="image-container">
+                            <img src="./images/romanrepublic.jpg" alt="Roman Republic">
+                            <img src="./images/conflictoftheorders.jpg" alt="Conflict of the Orders">
+                            <img src="./images/punicwars.jpg" alt="Punic Wars">
+                            <img src="./images/juliuscaesar.jpg" alt="Julius Caesar">
+                            <img src="./images/augustus.jpg" alt="Augustus">
+                        </div>
+                    </div>
+                    <div id="item-7">
+                        <h3>The Roman Republic (509 BC - 27 BC)</h3>
+                    </div>
+                    <div id="item-8">
+                        <p>
+                            The Roman Republic, born from the overthrow of the monarchy, marked a pivotal chapter in Rome's journey. It was defined by a dynamic balance of power between elected officials, fostering a unique system of governance.
+                            <br><br>
+                            The "Conflict of the Orders" emerged as a defining theme, pitting the patricians, the aristocracy, against the plebeians, the common citizens. This struggle for social and political rights led to significant reforms and the gradual inclusion of plebeians in decision-making.
+                            <br><br>
+                            The series of Punic Wars with Carthage, a powerful North African city-state, showcased Rome's military prowess and expanded its territorial reach across the Mediterranean. The Republic's intricate political structure and expansionist aspirations laid the groundwork for Rome's transformation into a dominant empire.
+                            <br><br>
+                            The republic was also characterized by prominent figures like Julius Caesar, whose military conquests paved the way for a shift towards autocratic rule. His assassination in 44 BC marked a turning point, plunging Rome into a period of political turmoil that ultimately led to the rise of Augustus.
+                            <br><br>
+                            Augustus, formerly known as Octavian, became Rome's first emperor, transitioning the republic into an empire while preserving certain republican façades. This shift marked the end of the Roman Republic and the dawn of the Roman Empire, setting the stage for a new era of Roman history.
+                        </p>
+                    </div>
+                    <div id="item-9">
+                        <div class="image-container">
+                            <img src="./images/emperor.jpg" alt="Emperor">
+                            <img src="./images/crisis.jpg" alt="Crisis">
+                            <img src="./images/split.jpg" alt="Western and Eastern">
+                            <img src="./images/westernromanempire.jpg" alt="Western Fall">
+                            <img src="./images/eastern.jpg" alt="Eastern Fall">
+                        </div>
+                    </div>
+                    <div id="item-10">
+                        <h3>The Roman Empire (27 BC - AD 476/1453)</h3>
+                    </div>
+                    <div id="item-11">
+                        <p>
+                            The Roman Empire, born from the transition of the republic, reshaped history on a grand scale. Under the leadership of Augustus, Rome experienced an era of relative peace known as the Pax Romana. This period brought stability, expansion, and cultural flourishing across the empire.
+                            <br><br>
+                            However, challenges arose. The Crisis of the Third Century brought internal strife and external invasions, prompting reforms and reorganization. Diocletian's establishment of the Tetrarchy divided power, aiming to strengthen governance and address complexities.
+                            <br><br>
+                            Constantine the Great's decision to move the capital to Constantinople marked a strategic shift, dividing the empire's administrative centers. This marked the Eastern Roman Empire's emergence, also known as the Byzantine Empire.
+                            <br><br>
+                            As time passed, the Western Roman Empire faced increased pressure from external forces. In 476 AD, it fell to Germanic chieftain Odoacer. This event traditionally marks the end of the Western Roman Empire, while the Eastern Roman Empire persisted as the Byzantine Empire until the fall of Constantinople in 1453.
+                            <br><br>
+                            The Roman Empire's legacy endures through its vast influence on law, governance, architecture, and culture. Its rise and eventual transformation illustrate the complexity of power, governance, and the lasting impact of one of history's most formidable empires.
+                        </p>
+                    </div>
+                </div>
+                <div class="sources">
+                    <h3>Sources</h3>
+                    <div>
+                        <h5>Roman History</h5>
+                        <a href="https://www.pngwing.com/en/free-png-vaiof" target="_blank" rel="noopener noreferrer"> Found of Rome </a>
+                    </div>
+                </div>
             </div>
+            <!-- Page 3 -->
             <div class="page" id="page3">
-                <h3>Roman History</h3>
-                <p>Embark on a journey through the captivating epochs of ancient Roman history, from the Roman Kingdom to the Roman Empire. Explore the rise of Rome as a kingdom, witnessing the legendary tales of Romulus and Remus. Witness the transformation of Rome into a republic, marked by its system of elected officials and the famous Senate. Experience the expansion of Roman territories, as military conquests led to the formation of a vast empire. Discover the brilliance of Roman engineering, with awe-inspiring structures like aqueducts and roads that connected the empire. Marvel at the grandeur of iconic monuments, such as the Colosseum and the Pantheon, symbols of Roman power and architectural prowess. Uncover the reign of influential emperors, who shaped the empire through political, social, and cultural reforms. Witness the blending of cultures as Rome absorbed and assimilated diverse traditions from its conquered lands. Experience the rich tapestry of Roman daily life, from vibrant markets to bustling public spaces. Delve into the enduring legacy of Roman law, literature, and philosophy, which have profoundly influenced Western civilization. Journey through the epic story of ancient Rome and uncover the triumphs, conflicts, and enduring impact of this remarkable civilization.</p>
+                <div>
+                    <h3>Roman Inventions</h3>
+                </div>
+                <div class="page3grid">
+                    <div id="page3item-0">
+                        <h3>Roman Concrete and Architecture</h3>
+                    </div>
+                    <div id="page3item-1">
+                        <p>Romans revolutionized construction with their use of concrete, enabling the creation of monumental structures like the Colosseum, aqueducts, and bridges. Their mastery of concrete allowed for durable and impressive architecture.</p>
+                    </div>
+                    <div id="page3item-2">
+                        <p>Roman engineers designed intricate aqueduct systems to transport water from distant sources to urban areas. These structures played a vital role in providing water for public baths, fountains, and households.</p>
+                    </div>
+                    <div id="page3item-3" class="image-container">
+                        <img src="./images/aqueducts.jpg" alt="Aqueducts">
+                        <h3>Aqueducts</h3>
+                    </div>
+                    <div id="page3item-4" class="image-container">
+                        <img src="./images/romanroads.jpg" alt="Roman Roads">
+                        <h3>Roman Roads</h3>
+                    </div>
+                    <div id="page3item-5">
+                        <p>The Romans established a vast network of well-constructed roads that connected their expansive empire. These roads facilitated efficient trade, military movement, and cultural exchange.</p>
+                    </div>
+                    <div id="page3item-6">
+                        <p>The use of arches and domes in architecture became emblematic of Roman engineering. Arches supported heavy loads and were a key feature in structures like the triumphal arches and the iconic Roman aqueducts.</p>
+                    </div>
+                    <div id="page3item-7" class="image-container">
+                        <img src="./images/dome.jpg" alt="Dome">
+                        <h3>Arch and Dome Architecture</h3>
+                    </div>
+                    <div id="page3item-8" class="image-container">
+                        <img src="./images/romanbath.jpg" alt="Roman Bath">
+                        <h3>Roman Baths</h3>
+                    </div>
+                    <div id="page3item-9">
+                        <p>Public baths, known as thermae, were a significant social and architectural innovation. They combined bathing facilities, exercise areas, and communal spaces, serving as hubs of relaxation and social interaction.</p>
+                    </div>
+                    <div id="page3item-10">
+                        <p>Romans developed advanced sewer systems to manage waste and sanitation in densely populated areas. These intricate networks improved public health and urban cleanliness.</p>
+                    </div>
+                    <div id="page3item-11">
+                        <h3>Sewer Systems</h3>
+                    </div>
+                    <div id="page3item-12">
+                        <h3>Civic Planning and Urban Design</h3>
+                    </div>
+                    <div id="page3item-13">
+                        <p>Roman cities showcased a distinctive urban design with organized grids, central forums, and public spaces. The architectural layout of cities like Rome influenced urban planning for centuries.</p>
+                    </div>
+                    <div id="page3item-14">
+                        <p>The Roman numeral system, using letters of the alphabet to represent numbers, was widely used for record-keeping, bookkeeping, and official documents.</p>
+                    </div>
+                    <div id="page3item-15" class="image-container">
+                        <img src="./images/numerals.png" alt="Numerals">
+                        <h3>Roman Numerals</h3>
+                    </div>
+                    <div id="page3item-16">
+                        <h3>Medical Instruments and Practices</h3>
+                    </div>
+                    <div id="page3item-17">
+                        <p>Roman physicians contributed to medical knowledge with various instruments and techniques. They used forceps, surgical tools, and advanced methods for setting bones and treating wounds.</p>
+                    </div>
+                    <div id="page3item-18">
+                        <p>The Romans developed advanced military equipment, including the gladius (short sword), pilum (spear), and lorica segmentata (segmented armor), enhancing their military dominance.</p>
+                    </div>
+                    <div id="page3item-19">
+                        <h3>Military Innovations</h3>
+                    </div>
+                    <div id="page3item-20">
+                        <h3>Public Libraries</h3>
+                    </div>
+                    <div id="page3item-21">
+                        <p>Roman society had public libraries called bibliothecae, housing collections of scrolls and promoting intellectual growth and cultural exchange.</p>
+                    </div>
+                    <div id="page3item-22">
+                        <p>Roman farmers introduced the wheeled plough, improving agricultural efficiency and contributing to increased food production.</p>
+                    </div>
+                    <div id="page3item-23">
+                        <h3>Wheeled Plough</h3>
+                    </div>
+                </div>
             </div>
+            <!-- Page 4 -->
             <div class="page" id="page4">
-                <h3>Roman Inventions</h3>
-                <p>Discover the ingenuity of ancient Roman inventions, from the Roman Kingdom to the Roman Empire. Witness the development of aqueducts, engineering marvels that transported water across vast distances, providing cities with a reliable water supply. Explore the revolutionary Roman road network, connecting far-flung regions and facilitating trade, communication, and military operations. Experience the remarkable construction of monumental structures, exemplified by the Colosseum and the Pantheon, showcasing advanced architectural techniques. Marvel at Roman concrete, a groundbreaking building material that enabled the creation of durable and grand structures. Uncover the genius of Roman engineering, with inventions like the Roman arch and vault, which revolutionized construction methods. Witness the innovative Roman numerals, a numeral system still used today for its simplicity and elegance. Explore the practicality of Roman innovations, such as central heating systems known as hypocausts, and early versions of plumbing and sewage systems. Discover the Roman military advancements, including sophisticated weaponry, siege engines, and military tactics that propelled their conquests. Experience the cultural influence of Roman inventions, which left an indelible impact on art, architecture, engineering, and daily life. Step into the world of ancient Rome and marvel at the inventiveness that shaped an empire and inspired generations to come.</p>
+                <div>
+                    <h3>Roman Culture and Religion</h3>
+                </div>
+                <div class="page4grid">
+                    <div id="page3item-0">
+                        <h3>Language and Literature</h3>
+                    </div>
+                    <div id="page3item-1">
+                        <p>Latin, the language of the Romans, played a crucial role in their culture. It formed the basis for literature, philosophy, law, and communication. Roman literature included epic poems (such as Virgil's "Aeneid"), historical writings (like Julius Caesar's "Commentarii de Bello Gallico"), and plays (by playwrights like Plautus and Terence).</p>
+                    </div>
+                    <div id="page3item-2">
+                        <p>Roman art and architecture were marked by their grandeur and technical prowess. They excelled in constructing monumental buildings, sculptures, and intricate frescoes. The arch, dome, and vaulting techniques revolutionized architecture. The Colosseum, Pantheon, and Trajan's Column are iconic examples.</p>
+                    </div>
+                    <div id="page3item-3">
+                        <h3>Art and Architecture</h3>
+                    </div>
+                    <div id="page3item-4">
+                        <h3>Law and Governance</h3>
+                    </div>
+                    <div id="page3item-5">
+                        <p>The Romans developed a complex legal system, influenced by principles such as "ius civile" (civil law) and "ius gentium" (law of nations). The Twelve Tables, an early codification of Roman law, formed the foundation for subsequent legal developments.</p>
+                    </div>
+                    <div id="page3item-6">
+                        <p>Gladiatorial combat, chariot races, and theater were popular forms of entertainment. The Colosseum hosted grand spectacles, while Roman theaters featured plays, comedies, and tragedies.</p>
+                    </div>
+                    <div id="page3item-7">
+                        <h3>Entertainment and Games</h3>
+                    </div>
+                    <div id="page3item-8">
+                        <h3>Education and Philosophy</h3>
+                    </div>
+                    <div id="page3item-9">
+                        <p>Education was highly valued in Roman society. Schools taught subjects like grammar, rhetoric, and philosophy. Roman philosophers, such as Seneca, Epictetus, and Marcus Aurelius, contributed to the development of ethical and Stoic philosophies.</p>
+                    </div>
+                    <div id="page3item-10">
+                        <p>Romans practiced polytheistic worship, believing in a pantheon of gods and goddesses who influenced various aspects of life. Jupiter (Zeus), Juno (Hera), and Minerva (Athena) were among the major deities.</p>
+                    </div>
+                    <div id="page3item-11">
+                        <h3>Polytheism and Gods</h3>
+                    </div>
+                    <div id="page3item-12">
+                        <h3>Religious Practices and Rituals</h3>
+                    </div>
+                    <div id="page3item-13">
+                        <p>Religious practices were integral to daily life. Romans performed rituals to appease deities, seek blessings, and ensure the well-being of the state. Public ceremonies like sacrifices and festivals were central to communal identity.</p>
+                    </div>
+                    <div id="page3item-14">
+                        <p>The state religion intertwined with politics and governance. Emperors were often deified after death, and loyalty to the state and its religious practices was expected of citizens.</p>
+                    </div>
+                    <div id="page3item-15">
+                        <h3>State Religion</h3>
+                    </div>
+                    <div id="page3item-16">
+                        <h3>Mystery Cults and Imported Deities</h3>
+                    </div>
+                    <div id="page3item-17">
+                        <p>Mystery cults, such as the worship of Isis and Mithras, gained popularity as alternatives to mainstream Roman religion. These cults offered initiates a deeper connection to the divine and the promise of an afterlife.
+                        </p>
+                    </div>
+                    <div id="page3item-18">
+                        <p>Romans believed in interpreting divine will through signs and omens. Augurs interpreted the flight patterns of birds, while divination techniques like examining entrails were used to predict future events.</p>
+                    </div>
+                    <div id="page3item-19">
+                        <h3>Augury and Divination</h3>
+                    </div>
+                    <div id="page3item-20">
+                        <h3>Syncretism and Influence</h3>
+                    </div>
+                    <div id="page3item-21">
+                        <p>Roman religion was influenced by Greek mythology and other cultures encountered through conquest. This syncretism led to the blending of deities and religious practices, enriching the Roman religious landscape.</p>
+                    </div>
+                </div>
+                <div class="sources">
+                    <h3>Sources</h3>
+                    <div>
+                        <h5>Roman History</h5>
+                        <a href="https://en.wikipedia.org/wiki/Roman_Senate" target="_blank" rel="noopener noreferrer"> Found of Rome, Government and Fall of Rome</a>
+                    </div>
+                </div>
             </div>
+            <!-- Page 5 (Quiz) -->
             <div class="page" id="page5">
-                <h3>Roman Inventions</h3>
-                <p>test culture</p>
-            </div>
-            <div class="page" id="page6">
-                <h3>Roman Inventions</h3>
-                <p>test quiz</p>
+                <div class="quizmain">
+                    <!-- Quiz content -->
+                    <div class="score">
+                        <p>score : 0</p>
+                    </div>
+                    <div class="question">
+                      <p class=" hide">
+                       question:
+                      </p>
+                      <div class="default start ">
+                        <p class="StartRetry" id="first">
+                          Start Quiz
+                      </p>
+                      </div>
+                    </div>
+                    <div class="answer ">
+                      <div class="ans">
+                        <div class="default box ">
+                          <p class="text" id="first">
+                        </p>
+                        </div>
+                      </div>
+                      <div class="ans">
+                        <div class="default box ">
+                          <p class="text">
+                        </p>
+                        </div>
+                      </div>
+                      <div class="ans">
+                        <div class="default box">
+                          <p class="text">
+                        </p>
+                        </div>
+                      </div>
+                      <div class="ans">
+                        <div class="default box">
+                          <p class="text">
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
