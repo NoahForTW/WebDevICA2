@@ -774,7 +774,7 @@ nav ul li{display:inline;}
         display: block;
     }
 
-    #menuList.menuHide{
+    #menuList{
         display: none;
         background-color: #8B0000;
         list-style-type: none;
