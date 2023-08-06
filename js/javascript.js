@@ -4,6 +4,9 @@ const page2btn=document.querySelector("#page2btn");
 const page3btn=document.querySelector("#page3btn");
 const page4btn=document.querySelector("#page4btn");
 const page5btn=document.querySelector("#page5btn");
+const clickhistory = document.querySelector("#historyclick")
+const clickinvention = document.querySelector("#inventionclick")
+const clickculture = document.querySelector("#cultureclick")
 var allpages=document.querySelectorAll(".page");
 //select all subtopic pages
 console.log(allpages);
@@ -21,7 +24,7 @@ let onepage=document.querySelector("#page"+pgno);
 onepage.style.display="block";
 }
 
-show(4)
+show(2)
 
 /*Listen for clicks on the buttons, assign anonymous
 eventhandler functions to call show function*/
@@ -39,6 +42,16 @@ show(4);
 });
 page5btn.addEventListener("click", function () {
 show(5);
+});
+/* for the Title click */ 
+clickhistory.addEventListener("click", function () {
+show(2);
+});
+clickinvention.addEventListener("click", function () {
+show(3);
+});
+clickculture.addEventListener("click", function () {
+show(4);
 });
 
 // Quiz code
@@ -272,7 +285,11 @@ const hamBtn=document.querySelector("#hamIcon");
 hamBtn.addEventListener("click",toggleMenus);
 const menuItemsList=document.querySelector("nav ul");
 function toggleMenus(){ /*open and close menu*/
-if(menuItemsList.style.display=="block")
-menuItemsList.style.display="none";
-else menuItemsList.style.display="block";
+    menuItemsList.classList.toggle("menuHide");
+    if (menuItemsList.style.display == "block") {
+    menuItemsList.style.display = "none";
+    } else {
+    menuItemsList.style.display = "block";
+}
 }//can optimize using toggle class with css transitions
+

@@ -62,6 +62,12 @@
     margin-top: 20px;
 }
 
+#historyclick,
+#inventionclick,
+#cultureclick {
+    cursor: pointer;
+}
+
 /* Navigation list styling */
 nav ul{
     display: none;
@@ -304,7 +310,7 @@ p {
 }
 
 .image-container img {
-    max-width: 100%; /* Make sure images fit within the container */
+    max-width: 90%; /* Make sure images fit within the container */
     height: auto;
     margin: 5px 0; /* Add some spacing between images */
 }
@@ -688,9 +694,8 @@ nav ul li{display:inline;}
     #hamIcon
     {
         display: block;
-        font-size: 115%;
-        justify-content: center;
-    } 
+    }
+    nav ul{display:none;}
 
     .page h3 { /* Adjusted font size for h3 */
         font-size: 18px;
@@ -761,24 +766,37 @@ nav ul li{display:inline;}
         padding-bottom: 5px;
     }
 
-    #menuList {
+    label {
+        display: flex;
+    }
+
+    #hamIcon:checked ~ #menuList {
+        display: block;
+    }
+
+    #menuList.menuHide{
         display: none;
-        flex-direction: row;
-        justify-content: center;
+        background-color: #8B0000;
+        list-style-type: none;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        flex-direction: column;
+        width: 100%;
+        top: 60px;
+        z-index: 0;
     }
 
-    #menuList ul {
-        margin: 0 15px;
+    .menuHide{
+        display: block;
     }
 
-    /* Show the menu list when checkbox is checked */
-    #hamIcon:checked + #menuList {
-        height: auto;
-        opacity: 1;
-    }
-
-    #menuList ul {
-        margin: 0 15px;
+    #menuList button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #8B0000;
+        color: white;
+        text-align: center;
     }
 
     #item-0 {
