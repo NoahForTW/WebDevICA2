@@ -127,7 +127,7 @@ var scoreText = document.querySelector(".score");
 var questionText = document.querySelector(".question");
 var ansBox = document.querySelectorAll(".box");
 var ansBoxText = document.querySelectorAll(".text");
-var pressd = false;
+var pressed = false;
 
 var Retry = document.querySelector(".start");
 
